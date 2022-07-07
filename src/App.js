@@ -16,6 +16,11 @@ function App() {
   return (
     <div className="App">
       <UserState>
+
+        <h1 className="p-5 text-white text-center">
+          React UseContext - Developed: K-DAZA
+        </h1>
+
         <div className="container p-4">
           <div className="row">
               <div className="col-md-7">

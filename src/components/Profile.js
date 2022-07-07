@@ -6,10 +6,9 @@ export default function Profile() {
   const { selectedUser }= useContext(UserContext);
 
 
+  // OPERADOR TERNARIO PARA MOSTRAR EL USUARIO SELECCIONADO
   return (
-    <>
-        {/*OPERADOR TERNARIO PARA MOSTRAR EL USUARIO SELECCIONADO*/}
-        
+    <>      
         {selectedUser ? (<div className="card card-body text-center">
                 <img src={selectedUser.avatar} alt="" className="card-img-top rounded-circle m-auto
                 img-fluid" style={{width: 180}}/>
@@ -18,8 +17,7 @@ export default function Profile() {
 
                 <h3>email: {selectedUser.email}</h3>
 
-        </div>) :  (<h1 className="text-white text-center">No user Selected</h1>)}
-        
+        </div>) :  (<h1 className="text-white text-center">No user Selected</h1>)}  
     </>
   )
 }
